@@ -1,0 +1,13 @@
+.footerContainer {
+  background: linear-gradient(#14151b 40%, #2b2a34);
+  width: 100%;
+  margin-top: -250px;
+  padding-top: 100px;
+}
+
+.footerContainerContent {
+  width: 80%;
+  margin: auto;
+  height: 150px;
+  text-align: center;
+}

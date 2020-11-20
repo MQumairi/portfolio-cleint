@@ -1,6 +1,6 @@
 .skillsContainer {
-  background: linear-gradient(#1c212c, #371810);
-  /* background: orange; */
+  background: linear-gradient(transparent 50%, rgb(0, 0, 0, 0.3)),
+    linear-gradient(#1c212c, #371810);
   width: 100%;
   padding-top: 200px;
 }
@@ -8,5 +8,6 @@
 .skillsContainerContent {
   width: 80%;
   margin: auto;
-  height: 600px;
+  height: min-content;
+  padding-bottom: 240px;
 }

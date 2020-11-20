@@ -5,6 +5,8 @@ import Logo from "../components/Logo/Logo";
 
 import React from "react";
 import Skills from "../components/Skills/Skills";
+import Projects from "../components/Projects/Projects";
+import Footer from "../components/Footer/Footer";
 
 const Home = ({ data }) => {
   return (
@@ -17,6 +19,8 @@ const Home = ({ data }) => {
         <About data={data} />
       </div>
       <Skills />
+      <Projects />
+      <Footer />
     </>
   );
 };
