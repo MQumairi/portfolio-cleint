@@ -6,8 +6,7 @@ body {
   padding: 0;
   margin: 0;
   background: #1c212c;
-  background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5)),
-    radial-gradient(circle, #1c212c 40%, #11151c);
+  background-image: linear-gradient(#1c212c, #161c25, #0f131a 30%);
   color: #abb4c7;
   font-family: "Nunito", sans-serif;
 }
