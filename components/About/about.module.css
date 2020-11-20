@@ -1,0 +1,45 @@
+#about {
+  font-family: "Quantico", sans-serif;
+  text-align: center;
+  font-size: 1.5em;
+  width: 60%;
+  margin: auto;
+  margin-top: 100px;
+}
+
+.aboutTitle {
+  font-size: 3em;
+  background: linear-gradient(to right, #abb4c7, #d9dae2, #d66853 70%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.aboutButton {
+  margin: auto;
+  margin-top: 50px;
+  width: min-content;
+  padding: 10px 50px;
+  border-radius: 10px;
+  font-family: "Nunito", sans-serif;
+  border: 1px solid #768bb1;
+  cursor: pointer;
+}
+
+.aboutButton:hover {
+  background: #768bb1;
+  color: #11151c;
+  transition: 0.3s;
+}
+
+@media only screen and (max-width: 1224px) {
+  #about {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #about {
+    width: 100%;
+  }
+}

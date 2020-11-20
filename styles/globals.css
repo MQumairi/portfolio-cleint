@@ -1,18 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Quantico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   background: #1c212c;
-  background-image: radial-gradient(
-    closest-side at 50% 30%,
-    #1c212c 30%,
-    #11151c
-  );
+  background-image: radial-gradient(circle, #1c212c 40%, #11151c);
   color: #abb4c7;
+  font-family: "Nunito", sans-serif;
 }
 
+#mainContainer {
+  width: 70%;
+  margin: auto;
+  margin-top: 50px;
+}
+
+@media only screen and (max-width: 768px) {
+  #mainContainer {
+    width: 90%;
+  }
+}
+
+/* 
 a {
   color: inherit;
   text-decoration: none;
@@ -20,4 +31,7 @@ a {
 
 * {
   box-sizing: border-box;
-}
+} */
+/* 
+font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
