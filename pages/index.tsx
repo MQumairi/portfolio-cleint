@@ -2,9 +2,9 @@ import { GetStaticProps, GetStaticPropsContext } from "next";
 import Head from "next/head";
 import About from "../components/About/About";
 import Logo from "../components/Logo/Logo";
-import styles from "../styles/Home.module.css";
 
 import React from "react";
+import Skills from "../components/Skills/Skills";
 
 const Home = ({ data }) => {
   return (
@@ -16,6 +16,7 @@ const Home = ({ data }) => {
         <Logo />
         <About data={data} />
       </div>
+      <Skills />
     </>
   );
 };

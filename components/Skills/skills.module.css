@@ -1,0 +1,12 @@
+.skillsContainer {
+  background: linear-gradient(#1c212c, #371810);
+  /* background: orange; */
+  width: 100%;
+  padding-top: 200px;
+}
+
+.skillsContainerContent {
+  width: 80%;
+  margin: auto;
+  height: 600px;
+}
