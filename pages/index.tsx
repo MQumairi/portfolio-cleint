@@ -8,7 +8,7 @@ import Skills from "../components/Skills/Skills";
 import Projects from "../components/Projects/Projects";
 import Footer from "../components/Footer/Footer";
 
-const Home = ({ data }) => {
+const Home = ({ dataAbout, dataSkills, dataTechs, dataProjects }) => {
   return (
     <>
       <Head>
@@ -16,10 +16,10 @@ const Home = ({ data }) => {
       </Head>
       <div id="mainContainer">
         <Logo />
-        <About data={data} />
+        <About data={dataAbout} />
       </div>
-      <Skills />
-      <Projects />
+      <Skills skill={dataSkills} tech={dataTechs} />
+      <Projects projects={dataProjects} />
       <Footer />
     </>
   );
@@ -29,12 +29,26 @@ export const getStaticProps: GetStaticProps = async (
   context: GetStaticPropsContext
 ) => {
   // Get external data from the file system, API, DB, etc. replace the "data" string
-  const res = await fetch("http://portfolio.local/wp-json/wp/v2/about");
-  const data = await res.json();
+  const resAbout = await fetch("http://portfolio.local/wp-json/wp/v2/about");
+  const dataAbout = await resAbout.json();
+
+  const resSkills = await fetch("http://portfolio.local/wp-json/wp/v2/skill");
+  const dataSkills = await resSkills.json();
+
+  const resTechs = await fetch("http://portfolio.local/wp-json/wp/v2/tech");
+  const dataTechs = await resTechs.json();
+
+  const resProjects = await fetch(
+    "http://portfolio.local/wp-json/wp/v2/projects"
+  );
+  const dataProjects = await resProjects.json();
 
   return {
     props: {
-      data,
+      dataAbout,
+      dataSkills,
+      dataTechs,
+      dataProjects,
     },
   };
 };

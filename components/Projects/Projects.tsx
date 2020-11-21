@@ -1,9 +1,12 @@
 import styles from "./projects.module.css";
+import ProjectSlider from "./ProjectSlider/ProjectSlider";
 
-const Projects = () => {
+const Projects = ({ projects }) => {
   const clipStyle = {
     clipPath: "url(#waveG)",
   };
+
+  // console.log(projects.length);
 
   return (
     <>
@@ -24,26 +27,10 @@ const Projects = () => {
 
       <div className={styles.projectsContainer} style={clipStyle}>
         <div className={styles.projectsContainerContent}>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit
-            corporis fuga eaque, veritatis magnam dolor ratione repellendus
-            aliquid, sed quis eligendi deserunt, in quo. Dolores labore ullam
-            aliquid facere minus!
-          </p>
-
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit
-            corporis fuga eaque, veritatis magnam dolor ratione repellendus
-            aliquid, sed quis eligendi deserunt, in quo. Dolores labore ullam
-            aliquid facere minus!
-          </p>
-
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit
-            corporis fuga eaque, veritatis magnam dolor ratione repellendus
-            aliquid, sed quis eligendi deserunt, in quo. Dolores labore ullam
-            aliquid facere minus!
-          </p>
+          <div className="container">
+            <h1 className="subHeading">Projects</h1>
+            <ProjectSlider projects={projects} />
+          </div>
         </div>
       </div>
     </>

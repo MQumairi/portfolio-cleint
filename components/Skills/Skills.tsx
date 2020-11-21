@@ -1,6 +1,13 @@
 import styles from "./skills.module.css";
+import SkillsDesc from "./SkillsDesc/SkillsDesc";
+import Tech from "./Tech/Tech";
 
-const Skills = () => {
+interface IProps {
+  skill: any;
+  tech: any;
+}
+
+const Skills: React.FC<IProps> = ({ skill, tech }) => {
   const clipStyle = {
     clipPath: "url(#wave)",
   };
@@ -24,26 +31,16 @@ const Skills = () => {
 
       <div className={styles.skillsContainer} style={clipStyle}>
         <div className={styles.skillsContainerContent}>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit
-            corporis fuga eaque, veritatis magnam dolor ratione repellendus
-            aliquid, sed quis eligendi deserunt, in quo. Dolores labore ullam
-            aliquid facere minus!
-          </p>
-
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit
-            corporis fuga eaque, veritatis magnam dolor ratione repellendus
-            aliquid, sed quis eligendi deserunt, in quo. Dolores labore ullam
-            aliquid facere minus!
-          </p>
-
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit
-            corporis fuga eaque, veritatis magnam dolor ratione repellendus
-            aliquid, sed quis eligendi deserunt, in quo. Dolores labore ullam
-            aliquid facere minus!
-          </p>
+          <div className="container">
+            <div className="row">
+              <div className="col-md">
+                <SkillsDesc skills={skill} />
+              </div>
+              <div className="col-md">
+                <Tech tech={tech} />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </>

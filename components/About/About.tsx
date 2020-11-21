@@ -1,9 +1,9 @@
 import styles from "./about.module.css";
 import Link from "next/link";
 
-const About = (data) => {
-  const title = data["data"][0]["title"]["rendered"];
-  const content = data["data"][0]["acf"]["raw_description"];
+const About = ({ data }) => {
+  const title = data[0]["title"]["rendered"];
+  const content = data[0]["acf"]["raw_description"];
 
   return (
     <>
