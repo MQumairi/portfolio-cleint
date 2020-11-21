@@ -24,8 +24,13 @@ const ProjectSlide = ({ project }) => {
   };
 
   if (gitLink == "") {
-    gitStyle.opacity = "0.5";
+    gitStyle.opacity = "0.3";
+    gitStyle.cursor = "default";
   }
+
+  const screenStyle = {
+    backgroundImage: `url('${screenshot}')`,
+  };
 
   return (
     <div>
@@ -33,22 +38,24 @@ const ProjectSlide = ({ project }) => {
         <div className="row">
           <div className="col-sm">
             <h2 className="subHeading">{title}</h2>
-            <p className={styles.slideContent}>{content}</p>
+            <p style={{ paddingRight: "50px" }} className={styles.slideContent}>
+              {content}
+            </p>
             <div className={styles.shareBar}>
-              <Link href={liveLink}>
+              <a href={liveLink} target="_blank">
                 <div
                   className={styles.linkButton}
                   style={{ backgroundImage: "url('/livelink.png')" }}
                 >
                   Live
                 </div>
-              </Link>
+              </a>
               {gitLink != "" && (
-                <Link href={gitLink}>
+                <a href={gitLink} target="_blank">
                   <div className={styles.linkButton} style={gitStyle}>
                     Git
                   </div>
-                </Link>
+                </a>
               )}
               {gitLink == "" && (
                 <div className={styles.linkButton} style={gitStyle}>
@@ -58,7 +65,7 @@ const ProjectSlide = ({ project }) => {
             </div>
           </div>
           <div className="col-sm">
-            <div className="projectScreenshot">{screenshot}</div>
+            <div className={styles.projectScreenshot} style={screenStyle}></div>
           </div>
         </div>
       </div>

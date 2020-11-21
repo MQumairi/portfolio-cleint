@@ -3,14 +3,6 @@ import ProjectSlide from "./ProjectSlide";
 import styles from "./projectslider.module.css";
 
 const ProjectSlider = ({ projects }) => {
-  //States
-  const [activeProject, setActiveProject] = useState(projects[0]);
-
-  //Sort projects
-  projects = projects.sort(
-    (p1: any, p2: any) => p1["acf"]["priority"] - p2["acf"]["priority"]
-  );
-
   //A function that takes a priority, and returns a Project
   const getProject = (priortiy: number) => {
     const foundProject = projects.find(
@@ -19,6 +11,9 @@ const ProjectSlider = ({ projects }) => {
 
     return foundProject;
   };
+
+  //States
+  const [activeProject, setActiveProject] = useState(getProject(1));
 
   //change slide
   const changeSlide = (decrement: boolean) => {

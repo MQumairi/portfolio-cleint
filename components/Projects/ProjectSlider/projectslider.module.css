@@ -38,6 +38,13 @@
   background-size: 40px auto;
   background-repeat: no-repeat;
   background-position: 5px 5px;
+  cursor: pointer;
+}
+
+.linkButton:hover {
+  color: #c25b43;
+  border-color: #c25b43;
+  transition: all 0.3s;
 }
 
 .slideContent {
@@ -45,13 +52,16 @@
 }
 
 .projectScreenshot {
-  width: 100%;
-  height: auto;
-  background: red;
+  width: 1000px;
+  height: 600px;
+  position: absolute;
   overflow: hidden;
+  margin-top: -60px;
+  background-size: 100% auto;
 }
 
-.projectScreenshot img {
-  width: 100px;
-  height: 100px;
+@media only screen and (max-width: 768px) {
+  .projectScreenshot {
+    position: relative;
+  }
 }
