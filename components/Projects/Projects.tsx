@@ -28,7 +28,9 @@ const Projects = ({ projects }) => {
       <div className={styles.projectsContainer} style={clipStyle}>
         <div className={styles.projectsContainerContent}>
           <div className="container">
-            <h1 className="subHeading">Projects</h1>
+            <h1 className="subHeading" style={{ marginLeft: "20px" }}>
+              Projects
+            </h1>
             <ProjectSlider projects={projects} />
           </div>
         </div>

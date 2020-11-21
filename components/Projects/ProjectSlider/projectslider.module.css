@@ -1,0 +1,57 @@
+.pageLink {
+  background: transparent;
+  position: relative;
+  display: block;
+  padding: 1rem 1.5rem;
+  margin-left: -1px;
+  line-height: 1.25;
+  font-size: 1.2em;
+  color: #abb4c7;
+  background-color: transparent;
+  border: 1px solid #abb4c7;
+  cursor: pointer;
+}
+
+.pageLink:hover {
+  color: #c25b43;
+  text-decoration: none;
+}
+
+.slideContainer {
+  /* background: black; */
+  padding: 50px 20px 100px 20px;
+}
+
+.shareBar {
+  margin-top: 50px;
+  display: flex;
+}
+
+.linkButton {
+  width: 100px;
+  padding: 15px;
+  font-size: 1em;
+  text-align: right;
+  padding-left: 45px;
+  border: 1px solid #abb4c7;
+  border-radius: 10px;
+  background-size: 40px auto;
+  background-repeat: no-repeat;
+  background-position: 5px 5px;
+}
+
+.slideContent {
+  font-size: 1.3em;
+}
+
+.projectScreenshot {
+  width: 100%;
+  height: auto;
+  background: red;
+  overflow: hidden;
+}
+
+.projectScreenshot img {
+  width: 100px;
+  height: 100px;
+}
