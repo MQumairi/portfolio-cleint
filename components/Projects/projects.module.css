@@ -12,3 +12,15 @@
   margin: auto;
   height: min-content;
 }
+
+@media only screen and (max-width: 1224px) {
+  .projectsContainer {
+    margin-top: -300px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .projectsContainer {
+    margin-top: -350px;
+  }
+}
