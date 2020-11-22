@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import ProjectSlide from "./ProjectSlide";
 import styles from "./projectslider.module.css";
+import "./projectslider.module.css";
 
 const ProjectSlider = ({ projects }) => {
   //A function that takes a priority, and returns a Project
@@ -48,8 +49,14 @@ const ProjectSlider = ({ projects }) => {
           </a>
         </li>
         {projects.map((project: any, i: number) => {
+          let activeStlye = "";
+
+          if (activeProject["acf"]["priority"] == i + 1) {
+            activeStlye = styles.activeItem;
+          }
+
           return (
-            <li key={i} className="page-item">
+            <li key={i} className={activeStlye}>
               <a
                 className={styles.pageLink}
                 onClick={() => setActiveProject(getProject(i + 1))}

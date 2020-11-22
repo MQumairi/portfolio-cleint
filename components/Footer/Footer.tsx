@@ -24,7 +24,8 @@ const Footer = () => {
 
       <div className={styles.footerContainer} style={clipStyle}>
         <div className={styles.footerContainerContent}>
-          <p>Footer</p>
+          <p>Copyright © 2020 Mohammed Alqumairi.</p>
+          <p>All rights reserved.</p>
         </div>
       </div>
     </>

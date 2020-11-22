@@ -13,12 +13,11 @@
 }
 
 .pageLink:hover {
-  color: #c25b43;
+  color: #e9c9c3;
   text-decoration: none;
 }
 
 .slideContainer {
-  /* background: black; */
   padding: 50px 20px 100px 20px;
 }
 
@@ -58,6 +57,10 @@
   overflow: hidden;
   margin-top: -60px;
   background-size: 100% auto;
+}
+
+.activeItem {
+  background: #28303f !important;
 }
 
 @media only screen and (max-width: 768px) {
