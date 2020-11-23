@@ -3,3 +3,9 @@
   font-family: "Nunito", sans-serif;
   font-size: 1.5em;
 }
+
+@media only screen and (max-width: 768px) {
+  .skillsContainer {
+    padding-right: 0px;
+  }
+}

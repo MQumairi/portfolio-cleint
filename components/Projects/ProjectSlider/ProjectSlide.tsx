@@ -38,9 +38,7 @@ const ProjectSlide = ({ project }) => {
         <div className="row">
           <div className="col-sm">
             <h2 className="subHeading">{title}</h2>
-            <p style={{ paddingRight: "50px" }} className={styles.slideContent}>
-              {content}
-            </p>
+            <p className={styles.slideContent}>{content}</p>
             <div className={styles.shareBar}>
               <a href={liveLink} target="_blank">
                 <div
