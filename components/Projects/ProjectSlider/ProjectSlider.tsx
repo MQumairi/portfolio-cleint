@@ -4,6 +4,20 @@ import styles from "./projectslider.module.css";
 import "./projectslider.module.css";
 
 const ProjectSlider = ({ projects }) => {
+  if (!projects[0]) {
+    projects = [
+      {
+        title: { rendered: "test title" },
+        acf: {
+          priority: 1,
+          raw_description: "test desc",
+          live_link: "www.google.com",
+          github_link: "www.github.com",
+          screenshot: "/gitlink.png",
+        },
+      },
+    ];
+  }
   //A function that takes a priority, and returns a Project
   const getProject = (priortiy: number) => {
     const foundProject = projects.find(
