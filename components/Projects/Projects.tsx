@@ -10,7 +10,7 @@ const Projects = ({ projects }) => {
 
   return (
     <>
-      <svg viewBox="100% 100% 100% 100%" preserveAspectRatio="xMinYMin slice">
+      <svg viewBox="0 0 0 0" preserveAspectRatio="xMinYMin slice">
         <clipPath
           id="waveG"
           clipPathUnits="objectBoundingBox"

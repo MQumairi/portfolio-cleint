@@ -21,6 +21,7 @@
 
 @media only screen and (max-width: 768px) {
   .projectsContainer {
-    margin-top: -350px;
+    padding-top: 180px;
+    margin-top: -380px;
   }
 }

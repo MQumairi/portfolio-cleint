@@ -74,7 +74,7 @@ const ProjectSlider = ({ projects }) => {
     <div>
       <ProjectSlide project={activeProject} />
 
-      <ul className="pagination" style={{ marginLeft: "20px" }}>
+      <ul className={"pagination " + styles.paginationBar}>
         <li className="page-item">
           <a
             className={styles.pageLink}

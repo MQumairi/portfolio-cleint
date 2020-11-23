@@ -13,6 +13,7 @@ const Home = ({ dataAbout, dataSkills, dataTechs, dataProjects }) => {
     <>
       <Head>
         <title>Mohammed Alqumairi</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <div id="mainContainer">
         <Logo />
