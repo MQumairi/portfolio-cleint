@@ -29,6 +29,8 @@ const Home = ({ dataAbout, dataSkills, dataTechs, dataProjects }) => {
 export const getStaticProps: GetStaticProps = async (
   context: GetStaticPropsContext
 ) => {
+  const api = process.env.NEXT_PUBLIC_API_URL;
+
   let dataAbout = {};
   let dataSkills = {};
   let dataTechs = {};
@@ -36,18 +38,16 @@ export const getStaticProps: GetStaticProps = async (
 
   // Get external data from the file system, API, DB, etc. replace the "data" string
   try {
-    const resAbout = await fetch("http://portfolio.local/wp-json/wp/v2/about");
+    const resAbout = await fetch(api + "/about");
     dataAbout = await resAbout.json();
 
-    const resSkills = await fetch("http://portfolio.local/wp-json/wp/v2/skill");
+    const resSkills = await fetch(api + "/skill");
     dataSkills = await resSkills.json();
 
-    const resTechs = await fetch("http://portfolio.local/wp-json/wp/v2/tech");
+    const resTechs = await fetch(api + "/tech");
     dataTechs = await resTechs.json();
 
-    const resProjects = await fetch(
-      "http://portfolio.local/wp-json/wp/v2/projects"
-    );
+    const resProjects = await fetch(api + "/projects");
     dataProjects = await resProjects.json();
   } catch (e) {
     console.log(e);
