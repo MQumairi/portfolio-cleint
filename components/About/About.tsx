@@ -2,8 +2,9 @@ import styles from "./about.module.css";
 import Link from "next/link";
 
 const About = ({ data }) => {
-  let title = "Mohamemd Alqumairi";
-  let content = "Student of computer science, software engineer";
+  let title = "Mohammed Alqumairi";
+  let content =
+    "Student of computer science, software engineer, based in London";
 
   if (data[0] != undefined) {
     title = data[0]["title"]["rendered"];

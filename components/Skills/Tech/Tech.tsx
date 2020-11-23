@@ -3,8 +3,13 @@ import TechIcon from "./TechIcon/TechIcon";
 const Tech = ({ tech }) => {
   if (!tech[0]) {
     tech = [
-      { title: "Swift", acf: { tech_icon: "/gitlink.png" } },
-      { title: "Java", acf: { tech_icon: "/gitlink.png" } },
+      { title: { rendered: ".NET" }, acf: { tech_icon: "/dotnet.png" } },
+      { title: { rendered: "Java" }, acf: { tech_icon: "/java.png" } },
+      { title: { rendered: "Node" }, acf: { tech_icon: "/node.png" } },
+      { title: { rendered: "Php" }, acf: { tech_icon: "/php.png" } },
+      { title: { rendered: "Python" }, acf: { tech_icon: "/python.png" } },
+      { title: { rendered: "React" }, acf: { tech_icon: "/react.png" } },
+      { title: { rendered: "Swift" }, acf: { tech_icon: "/swift.png" } },
     ];
   }
 

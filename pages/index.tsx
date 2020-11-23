@@ -12,7 +12,7 @@ const Home = ({ dataAbout, dataSkills, dataTechs, dataProjects }) => {
   return (
     <>
       <Head>
-        <title>Mohamemd Alqumairi</title>
+        <title>Mohammed Alqumairi</title>
       </Head>
       <div id="mainContainer">
         <Logo />

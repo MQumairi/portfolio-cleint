@@ -7,13 +7,36 @@ const ProjectSlider = ({ projects }) => {
   if (!projects[0]) {
     projects = [
       {
-        title: { rendered: "test title" },
+        title: { rendered: "Ticket System" },
         acf: {
           priority: 1,
-          raw_description: "test desc",
-          live_link: "www.google.com",
-          github_link: "www.github.com",
-          screenshot: "/gitlink.png",
+          raw_description:
+            "Full stack ticket system, built with .NET Core 3.1 in the backend, and React with Hooks in the frontend. Published on Azure.",
+          live_link: "https://mqumairi-tickets.azurewebsites.net/",
+          github_link: "https://github.com/MQumairi/ticket-system-server",
+          screenshot: "/tickets.jpg",
+        },
+      },
+      {
+        title: { rendered: "Invexel" },
+        acf: {
+          priority: 2,
+          raw_description:
+            "Real estate investment platform built using Php and Bootstrap. Mobile responsive, and with functionality to subscribe users to email lists.",
+          live_link: "https://invexel.com/",
+          github_link: "",
+          screenshot: "/invexel.jpg",
+        },
+      },
+      {
+        title: { rendered: "Budget Buddies" },
+        acf: {
+          priority: 3,
+          raw_description:
+            "Led a team of developers in the 48in48 hackathon to develop a custom WordPress theme for the non-profit organization Budget Buddies.",
+          live_link: "https://budgetbuddies.org/",
+          github_link: "",
+          screenshot: "/budgetbuddies.jpg",
         },
       },
     ];
