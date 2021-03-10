@@ -23,9 +23,18 @@ const ProjectSlide = ({ project }) => {
     marginLeft: "20px",
   };
 
+  let liveStyle: any = {
+    backgroundImage: "url('/livelink.png')",
+  };
+
   if (gitLink == "") {
     gitStyle.opacity = "0.3";
     gitStyle.cursor = "default";
+  }
+
+  if (liveLink == "") {
+    liveStyle.opacity = "0.3";
+    liveStyle.cursor = "default";
   }
 
   const screenStyle = {
@@ -40,14 +49,21 @@ const ProjectSlide = ({ project }) => {
             <h2 className="subHeading">{title}</h2>
             <p className={styles.slideContent}>{content}</p>
             <div className={styles.shareBar}>
-              <a href={liveLink} target="_blank">
-                <div
-                  className={styles.linkButton}
-                  style={{ backgroundImage: "url('/livelink.png')" }}
-                >
+              {/* If life link is not empty... */}
+              {liveLink != "" && (
+                <a href={liveLink} target="_blank">
+                  <div className={styles.linkButton} style={liveStyle}>
+                    Live
+                  </div>
+                </a>
+              )}
+              {/*If live link is empty... */}
+              {liveLink == "" && (
+                <div className={styles.linkButton} style={liveStyle}>
                   Live
                 </div>
-              </a>
+              )}
+              {/*If git link is not empty... */}
               {gitLink != "" && (
                 <a href={gitLink} target="_blank">
                   <div className={styles.linkButton} style={gitStyle}>
@@ -55,6 +71,7 @@ const ProjectSlide = ({ project }) => {
                   </div>
                 </a>
               )}
+              {/*If git link is empty... */}
               {gitLink == "" && (
                 <div className={styles.linkButton} style={gitStyle}>
                   Git

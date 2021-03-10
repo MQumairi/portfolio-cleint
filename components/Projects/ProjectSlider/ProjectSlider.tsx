@@ -39,6 +39,28 @@ const ProjectSlider = ({ projects }) => {
           screenshot: "/budgetbuddies.jpg",
         },
       },
+      {
+        title: { rendered: "Haskell LinReg" },
+        acf: {
+          priority: 4,
+          raw_description:
+            "A tool for solving regression problems, using linear regression and gradient descent algorithms. Includes a file parser, and feature scaling.",
+          live_link: "",
+          github_link: "https://github.com/MQumairi/Haskell-LinReg",
+          screenshot: "/linreg.jpg",
+        },
+      },
+      {
+        title: { rendered: "Numpy NN" },
+        acf: {
+          priority: 5,
+          raw_description:
+            "Using just the Numpy library, developed a fully functioning neural network, able to classify the MNIST dataset with 91% accuracy.",
+          live_link: "",
+          github_link: "https://github.com/MQumairi/numpy-neural-network",
+          screenshot: "/numpynn.jpg",
+        },
+      },
     ];
   }
   //A function that takes a priority, and returns a Project
@@ -75,7 +97,7 @@ const ProjectSlider = ({ projects }) => {
       <ProjectSlide project={activeProject} />
 
       <ul className={"pagination " + styles.paginationBar}>
-        <li className="page-item">
+        {/* <li className="page-item">
           <a
             className={styles.pageLink}
             onClick={() => changeSlide(true)}
@@ -84,7 +106,7 @@ const ProjectSlider = ({ projects }) => {
             <span aria-hidden="true">&laquo;</span>
             <span className="sr-only">Previous</span>
           </a>
-        </li>
+        </li> */}
         {projects.map((project: any, i: number) => {
           let activeStlye = "";
 
@@ -104,7 +126,7 @@ const ProjectSlider = ({ projects }) => {
           );
         })}
 
-        <li className="page-item">
+        {/* <li className="page-item">
           <a
             className={styles.pageLink}
             onClick={() => changeSlide(false)}
@@ -113,7 +135,7 @@ const ProjectSlider = ({ projects }) => {
             <span aria-hidden="true">&raquo;</span>
             <span className="sr-only">Next</span>
           </a>
-        </li>
+        </li> */}
       </ul>
     </div>
   );
