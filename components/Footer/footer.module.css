@@ -1,4 +1,4 @@
-.footerContainer {
+/* .footerContainer {
   background-image: url("/waves/footWave.svg");
   background-size: cover;
   background-position: 50px 0px;
@@ -17,6 +17,36 @@
   padding-top: 100px;
   opacity: 0.5;
   line-height: 12px;
+} */
+
+.footerContainer {
+  background-image: url("/waves/footWave.svg");
+  background-size: cover;
+  background-repeat: repeat-x;  
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  margin-top: -150px;
+  background-position: 50px 0px;
+  animation-name: moveWave;
+  animation-duration: 150s;
+  animation-iteration-count: infinite;
+  animation-delay: 0ms;
+}
+
+.footerContainerContent {
+  width: 80%;
+  margin: auto;
+  height: 350px;
+  text-align: center;
+  padding-top: 200px;
+  opacity: 0.5;
+  line-height: 12px;
 }
 
 
+@keyframes moveWave {
+  0%   {background-position: 100vw 0px;}
+  50%  {background-position: 150vw 0px}
+  100% {background-position: 200vw 0px}
+}
