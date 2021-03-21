@@ -1,4 +1,4 @@
-/* .footerContainer {
+.footerContainer {
   background-image: url("/waves/footWave.svg");
   background-size: cover;
   background-position: 50px 0px;
@@ -17,9 +17,9 @@
   padding-top: 100px;
   opacity: 0.5;
   line-height: 12px;
-} */
+}
 
-.footerContainer {
+/* .footerContainer {
   background-image: url("/waves/footWave.svg");
   background-size: cover;
   background-repeat: repeat-x;  
@@ -49,4 +49,4 @@
   0%   {background-position: 100vw 0px;}
   50%  {background-position: 150vw 0px}
   100% {background-position: 200vw 0px}
-}
+} */

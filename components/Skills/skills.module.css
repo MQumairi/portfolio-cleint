@@ -4,7 +4,7 @@
   background-position: 840px 0px;
   background-repeat: repeat-x;
   margin-top: 120px;
-  animation-name: moveWave;
+  /* animation-name: moveWave; */
   animation-duration: 30s;
   animation-delay: 0ms;
   animation-iteration-count: infinite;
