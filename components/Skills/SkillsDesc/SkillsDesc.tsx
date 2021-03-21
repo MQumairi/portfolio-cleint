@@ -3,7 +3,7 @@ import styles from "./skillsDesc.module.css";
 const SkillsDesc = ({ skills }) => {
   let title = "Skills";
   let content =
-    "Experience in full-stack web development, native app development, Machine Learning, and UML modeling.";
+    "Experience in full-stack web development, native application development, Machine Learning, and UML modeling.";
 
   if (skills[0] != undefined) {
     title = skills[0]["title"]["rendered"];

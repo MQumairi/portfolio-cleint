@@ -1,18 +1,31 @@
-.skillsContainer {
-  background: linear-gradient(#1c212c, #371810, #1b0c08);
-  width: 100%;
-  padding-top: 200px;
+#skillsWave {
+  background-image: url("/waves/skillsWave4.svg");
+  background-size: cover;
+  background-position: 840px 0px;
+  background-repeat: repeat-x;
+  margin-top: 120px;
 }
 
 .skillsContainerContent {
   width: 80%;
   margin: auto;
   height: min-content;
-  padding-bottom: 240px;
+  padding: 250px 0px;
+}
+
+@media only screen and (max-width: 1224px) {
+  #skillsWave {
+    background-position: 240px 0px;
+    background-size: auto 100%;
+  }
+  .skillsContainerContent {
+    padding: 200px 0px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
   .skillsContainerContent {
-    padding-bottom: 320px;
+    padding: 100px 0px;
+    padding-top: 150px;
   }
 }

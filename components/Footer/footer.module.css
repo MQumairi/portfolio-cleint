@@ -1,16 +1,20 @@
 .footerContainer {
-  background: linear-gradient(#0d0d11, #14151b, #2b2a34);
+  background-image: url("/waves/footWave2.svg");
+  background-size: cover;
+  background-position: 50px 0px;
+  background-repeat: repeat-x;  
   width: 100%;
-  margin-top: -250px;
-  padding-top: 100px;
+  position: absolute;
+  z-index: 1;
+  margin-top: -150px;
 }
 
 .footerContainerContent {
   width: 80%;
   margin: auto;
-  height: 150px;
+  height: 250px;
   text-align: center;
-  padding-top: 50px;
+  padding-top: 100px;
   opacity: 0.5;
   line-height: 12px;
 }
