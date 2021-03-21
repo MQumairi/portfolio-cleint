@@ -1,10 +1,14 @@
 #projectssWave {
-  background-image: url("/waves/projectsWave3.svg");
+  background-image: url("/waves/projectsWave.svg");
   background-size: cover;
-  background-position: -350px 0px;
   background-repeat: repeat-x;
   margin-top: -150px;
   overflow: hidden;
+  background-position: -350px 0px;
+  /* animation-name: moveWave; */
+  animation-duration: 35s;
+  animation-iteration-count: infinite;
+  animation-delay: 0ms;
 }
 
 .projectsContainerContent {
@@ -17,6 +21,7 @@
 @media only screen and (max-width: 1224px) {
   #projectssWave {
     margin-top: -90px;
+    animation-name: none;
   }
   .projectsContainerContent {
     padding: 150px 0px;
@@ -27,4 +32,10 @@
   .projectsContainerContent {
     padding: 150px 0px;
   }
+}
+
+@keyframes moveWave {
+  0%   {background-position: 0vw 0px;}
+  50%  {background-position: 50vw 0px}
+  100% {background-position: 100vw 0px}
 }
