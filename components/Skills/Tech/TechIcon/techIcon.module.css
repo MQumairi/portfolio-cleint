@@ -4,6 +4,7 @@
   padding: 10px 1px;
   border-radius: 10px;
   margin-top: 25px;
+  min-width: 120px;
 }
 
 .techIconImage {
@@ -21,6 +22,20 @@
   font-size: 1.3em;
   margin-left: -20px;
 }
+
+@media only screen and (max-width: 1400px) {
+  .techIconImage {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/* @media only screen and (max-width: 1224px) {
+  .techIconImage {
+    width: 0px;
+    height: 40px;
+  }
+} */
 
 @media only screen and (max-width: 768px) {
   .techIconText {

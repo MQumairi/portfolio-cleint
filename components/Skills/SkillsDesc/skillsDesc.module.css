@@ -1,11 +1,13 @@
 .skillsContainer {
-  padding: 15px;
   font-family: "Nunito", sans-serif;
   font-size: 1.5em;
+  padding-right: 40px;
+  padding-top: 20px;
 }
 
 @media only screen and (max-width: 768px) {
   .skillsContainer {
+    margin-left: 0px;
     padding-right: 0px;
   }
 }

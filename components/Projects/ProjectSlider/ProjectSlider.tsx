@@ -22,7 +22,7 @@ const ProjectSlider = ({ projects }) => {
         acf: {
           priority: 2,
           raw_description:
-            "Real estate investment platform built using Php and Bootstrap. Mobile responsive, and with functionality to subscribe users to email lists.",
+            "Real estate investment platform built using Php. Mobile responsive, and with functionality to subscribe users to email lists.",
           live_link: "https://invexel.com/",
           github_link: "",
           screenshot: "/invexel.jpg",
@@ -33,7 +33,7 @@ const ProjectSlider = ({ projects }) => {
         acf: {
           priority: 3,
           raw_description:
-            "Led a team of developers in the 48in48 hackathon to develop a custom WordPress theme for the non-profit organization Budget Buddies.",
+            "Led a team of developers in the 48in48 hackathon to develop a custom theme for the non-profit, Budget Buddies.",
           live_link: "https://budgetbuddies.org/",
           github_link: "",
           screenshot: "/budgetbuddies.jpg",
@@ -44,7 +44,7 @@ const ProjectSlider = ({ projects }) => {
         acf: {
           priority: 4,
           raw_description:
-            "A tool for solving regression problems, using linear regression and gradient descent algorithms. Includes a file parser, and feature scaling.",
+            "A tool for solving regression problems, using linear regression and gradient descent. Includes a file parser, and feature scaling.",
           live_link: "",
           github_link: "https://github.com/MQumairi/Haskell-LinReg",
           screenshot: "/linreg.jpg",
