@@ -1,9 +1,21 @@
 .logo {
   font-family: "Quantico", sans-serif;
-  font-size: 1.8em;
+  font-size: 1.7rem;
   color: #abb4c7;
 }
 
 .logoTag {
   color: #c25b43;
+}
+
+@media only screen and (min-width: 2000px) {
+  .logo {
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .logo {
+    font-size: 1em;
+  }
 }

@@ -22,12 +22,21 @@ body {
 #mainContainer {
   width: 70%;
   margin: auto;
-  margin-top: 50px;
+  padding-top: 1.5rem;
+  --contentWidth: 80%;
 }
 
+/* Subheadings like "Skills" and "Project" */
 .subHeading {
   color: #e9c9c3;
   font-family: "Quantico", sans-serif;
+  font-size: 2rem;
+}
+
+@media only screen and (min-width: 2000px) {
+  .subHeading {
+    font-size: 3.5rem;
+  }
 }
 
 @media only screen and (max-width: 768px) {
