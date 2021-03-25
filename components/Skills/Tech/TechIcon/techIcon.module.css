@@ -1,46 +1,52 @@
 .techIconBox {
   border: 1px #768bb1 solid;
   color: #abb4c7;
-  padding: 10px 1px;
+  padding: 1vh 1px;
   border-radius: 10px;
   margin-top: 25px;
   min-width: 120px;
+  max-width: 10rem;
 }
 
 .techIconImage {
-  width: 50px;
-  height: 50px;
+  width: 3rem;
+  height: 3rem;
   background-repeat: no-repeat;
   background-size: contain;
-  margin-left: 10px;
+  margin-left: 0.3rem;
 }
 
 .techIconText {
   text-align: center;
-  margin-top: 8px;
+  margin-top: 0.4rem;
   overflow: hidden;
-  font-size: 1.3em;
-  margin-left: -20px;
+  font-size: 1.4rem;
+  margin-left: -0.5rem;
 }
 
-@media only screen and (max-width: 1400px) {
-  .techIconImage {
-    width: 40px;
-    height: 40px;
+@media only screen and (min-width: 2000px) {
+  .techIconBox {
+    width: 26rem;
+    max-width: 100rem;
+    margin-right: 15rem;
   }
-}
 
-/* @media only screen and (max-width: 1224px) {
   .techIconImage {
-    width: 0px;
-    height: 40px;
+    width: 6rem;
+    height: 6rem;
+    margin-left: 2rem;
   }
-} */
 
-@media only screen and (max-width: 768px) {
   .techIconText {
-    font-size: 1.1em;
-    margin-top: 5px;
+    margin-top: 0.4rem;
+    font-size: 3rem;
+    margin-left: -1rem;
+  }
+}
+
+@media only screen and (max-width: 1224px) {
+  .techIconText {
+    margin-top: 8px;
     margin-left: -10px;
   }
 

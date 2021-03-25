@@ -1,8 +1,10 @@
+@import "../../styles/variables.css";
+
 #projectssWave {
   background-image: url("/waves/projectsWave.svg");
   background-size: cover;
   background-repeat: repeat-x;
-  margin-top: -150px;
+  margin-top: -13vh;
   overflow: hidden;
   background-position: -350px 0px;
   /* animation-name: moveWave; */
@@ -12,10 +14,18 @@
 }
 
 .projectsContainerContent {
-  width: 80%;
+  width: 70%;
   margin: auto;
   height: min-content;
-  padding: 200px 0px;
+  padding: 16vh 0px;
+  min-height: 50vh;
+  font-size: 1rem;
+}
+
+@media only screen and (min-width: 2000px) {
+  .projectsContainerContent {
+    font-size: 2rem;
+  }
 }
 
 @media only screen and (max-width: 1224px) {
@@ -35,7 +45,13 @@
 }
 
 @keyframes moveWave {
-  0%   {background-position: 0vw 0px;}
-  50%  {background-position: 50vw 0px}
-  100% {background-position: 100vw 0px}
+  0% {
+    background-position: 0vw 0px;
+  }
+  50% {
+    background-position: 50vw 0px;
+  }
+  100% {
+    background-position: 100vw 0px;
+  }
 }

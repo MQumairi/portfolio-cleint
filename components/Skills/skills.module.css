@@ -8,13 +8,23 @@
   animation-duration: 30s;
   animation-delay: 0ms;
   animation-iteration-count: infinite;
+  height: min-content;
 }
 
 .skillsContainerContent {
-  width: 80%;
+  width: 70%;
   margin: auto;
   height: min-content;
-  padding: 250px 0px;
+  padding: 20vh 0px;
+  /* background: red; */
+  min-height: 50vh;
+  font-size: 1rem;
+}
+
+@media only screen and (min-width: 2000px) {
+  .skillsContainerContent {
+    font-size: 2rem;
+  }
 }
 
 @media only screen and (max-width: 1224px) {
@@ -29,14 +39,19 @@
 
 @media only screen and (max-width: 768px) {
   .skillsContainerContent {
-    padding: 100px 0px;
+    padding: 150px 0px;
     padding-top: 150px;
   }
 }
 
-
 @keyframes moveWave {
-  0%   {background-position: 50vw 0px;}
-  50%  {background-position: 100vw 0px}
-  100% {background-position: 150vw 0px}
+  0% {
+    background-position: 50vw 0px;
+  }
+  50% {
+    background-position: 100vw 0px;
+  }
+  100% {
+    background-position: 150vw 0px;
+  }
 }
