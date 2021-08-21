@@ -10,8 +10,8 @@ const ProjectSlider = ({ projects }) => {
         title: { rendered: "Ticket System" },
         acf: {
           priority: 1,
-          raw_description: "Full stack ticket system, built with .NET Core 3.1 in the backend, and React with Hooks in the frontend. Published on Azure.",
-          live_link: "https://mqumairi-tickets.azurewebsites.net/",
+          raw_description: "Full stack ticket system, built with .NET Core and React. Dockerized and Published on Heroku.",
+          live_link: "http://mqumairi-ticketsystem.herokuapp.com/",
           github_link: "https://github.com/MQumairi/ticket-system-server",
           screenshot: "/tickets.jpg",
         },
